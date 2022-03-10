@@ -7,3 +7,4 @@ These include the following:
 * Install Docker
 * Install Docker Compose
 * Install AWS CLI
+* Node JS

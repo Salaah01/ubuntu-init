@@ -33,3 +33,10 @@ chmod +x /usr/local/bin/docker-compose
 # AWS CLI
 # https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 apt -y install awscli
+
+# Node JS
+# https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa
+curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+bash nodesource_setup.sh
+apt install nodejs
+rm nodesource_setup.sh

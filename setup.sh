@@ -9,6 +9,9 @@ fi
 apt update
 apt upgrade -y
 
+# Build packages
+apt install build-essential software-properties-common -y
+
 # PostgreSQL
 # https://www.postgresql.org/download/linux/ubuntu/
 sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'

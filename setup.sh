@@ -24,14 +24,14 @@ apt -y install postgresql
 # The following script will download the latest edge version. If Docker does
 # not work after installation properly, it is a good idea to uninstall and
 # install the stable version.
-curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh
-rm get-docker.sh
-usermod -aG docker root
+#curl -fsSL https://get.docker.com -o get-docker.sh
+#sh get-docker.sh
+#rm get-docker.sh
+#usermod -aG docker root
 
 # Docker Compose
-curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+#curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#chmod +x /usr/local/bin/docker-compose
 
 # AWS CLI
 # https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html

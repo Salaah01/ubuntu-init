@@ -47,3 +47,10 @@ curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
 bash nodesource_setup.sh
 apt install nodejs
 rm nodesource_setup.sh
+
+# To allow certain Python packages to be installed
+apt install libpq-dev -y
+
+# Find out Python version and install venv for the version
+PYTHON_VERSION=$(python3 -c 'import sys; version=sys.version_info[:3]; print("{0}.{1}".format(*version))')
+apt install python${PYTHON_VERSION}-venv python3-venv -y

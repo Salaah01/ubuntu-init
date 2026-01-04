@@ -41,12 +41,9 @@ unzip awscliv2.zip
 ./aws/install
 rm awscliv2.zip
 
-# Node JS
-# https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa
-curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
-bash nodesource_setup.sh
-apt install nodejs
-rm nodesource_setup.sh
+# Installing NVM, user can decide which version of node to use
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# using 0.34.0 here - should be a better way to fetch whatever the lastest is.
 
 # To allow certain Python packages to be installed
 apt install libpq-dev -y
